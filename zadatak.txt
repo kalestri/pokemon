@@ -1,0 +1,39 @@
+Zadatak HTML/CSS/JS
+
+Potrebno je napraviti web app/sajt koji prikazuje podatke dobijene sa sledećeg API endpointa: 
+    https://api.pokemontcg.io/v1/cards
+
+Obavezno je da postoje minimum tri linka u glavnoj navigaciji:
+  
+    - Početna, na kojoj se prikazuju pokemoni.
+        Potrebno je da stranica ima paginaciju i da prikazuje max 10 item-a po jednoj stranici. 
+        Maksimalni ukupni broj pokemona koji se prikazuje na sajtu ne mora da predje 100.
+        Za svaki od pokemona koji se prikazuje potrebno je parsirati samo neke od podataka i ostaviti mogućnost
+        selektovanja konkretnog pokemona, čime se otvara profilna stranica selektovanog pokemona sa prikazom detaljnijih podataka o njemu.
+
+    - Profil, na kojoj se prikazuju detaljnije podaci o odabranom pokemonu, nakon što se on selektuje sa početne stranice.
+
+    - Kontakt, stranica sa kontakt formom sa obaveznim poljima :
+            - ime,
+            - prezime,
+            - e-mail adresa,
+            - poruka
+        Uraditi javascript validaciju unetih podataka:
+            ime - minimum 2 karaktera, maximum 15,
+            prezime - validacija ista kao vrednost za ime,
+            email - validna email adresa,
+            poruka - korisnik nama šalje neku poruku. Taj tekst ne sme imati više od 100 karaktera.
+        
+        Nije potrebno slati podatke iz kontakt forme. Zaustaviti submitovanje forme i u konzoli
+        ispisati da je validacija uspešna.
+        U slučaju da validacija nekog polja nije uspešna prikazati poruku korisniku.
+
+Tehnologije:
+    HTML5
+    CSS3
+    JavaScript (ES6)
+
+Napomena:
+    Layout stranice uraditi korišćenjem CSS Grid-a. Nije dozvoljeno korišćenje bootstrap-a.
+    Nije dozvoljeno koristiti jQuery biblioteku.
+    Poslati link do github repozitorijuma nakon uradjenog/testiranog zadatka.
